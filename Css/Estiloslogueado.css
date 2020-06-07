@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+section {
+	display: flex;
+	flex-direction: column;
+}
+.logos {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	margin-top: 330px;
+}
+.logos img {
+	width: 40px;
+	height: 40px;
+}
+.navegador {
+	display: flex;
+	background-color: #0950bb;
+	height: 64px;
+	justify-content: flex-end;
+	align-items: center;
+}
+.items {
+	margin-right: 12%;
+}
+.items nav ul {
+	display: flex;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+}
+.items nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	display: flex;
+	margin-left: 15px;
+	margin-right: 15px;
+	justify-content: center;
+}
+.items nav ul li {
+	display: flex;
+	list-style: none;
+	text-align: center;
+	height: 56px;
+
+	align-items: center;
+}
+.items nav ul li:hover {
+	background-color: #002c6d;
+}
+
+/* Incio body */
+.fondo {
+	position: relative;
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.fondo:before {
+	content: '';
+	background-image: url('../recursos/dogedit.jpg');
+	background-position: center 0px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.2;
+}
+
+.fondo h1 {
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	color: #0950bb;
+	font-size: 70px;
+	width: 60%;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+.descrip {
+	display: flex;
+	flex-direction: row;
+	width: 60%;
+	height: 50%;
+}
+.descrip p {
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	color: black;
+	font-size: 24px;
+	margin: 20px;
+	min-width: 300px;
+	max-height: 250px;
+}
+.mision,
+.vision {
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	color: #0950bb;
+	font-size: 34px;
+	height: 250px;
+}
+.mision h3,
+.vision h3 {
+	margin-left: 5%;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.imagen {
+	position: relative;
+	bottom: 10%;
+}
+
+/* Final body */

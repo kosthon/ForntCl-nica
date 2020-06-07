@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.separador {
+	background-color: #0950bb;
+	height: 64px;
+}
+.fondo {
+	position: relative;
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.fondo:before {
+	content: '';
+	background-image: url('../recursos/dogedit.jpg');
+	background-position: center 0px;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0.2;
+}
+.botones {
+	display: flex;
+	width: 750px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.botones button {
+	position: relative;
+	border: none;
+	cursor: pointer;
+	background: #0950bb;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+.botones button:focus {
+	outline: none;
+}
+.botones button:hover {
+	background-color: #3d8aff;
+}
+.botones button img {
+	width: 130px;
+	height: 130px;
+	margin-top: 10px;
+}
+.botones button p {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+	color: white;
+	margin-top: 0px;
+}
+@media (max-width: 600px) {
+	.botones {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+	}
+	.botones button {
+		width: 120px;
+		height: 120px;
+	}
+}
