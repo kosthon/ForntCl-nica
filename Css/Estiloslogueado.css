@@ -60,12 +60,8 @@ section {
 /* Incio body */
 .fondo {
 	position: relative;
-	height: 90vh;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	height: 90vh;
 }
 .fondo:before {
 	content: '';
@@ -87,17 +83,16 @@ section {
 	color: #0950bb;
 	font-size: 70px;
 	width: 60%;
-	margin-bottom: 10px;
-	margin-top: 50px;
+	margin: 0 auto;
 }
 .descrip {
 	display: flex;
 	flex-direction: row;
 	width: 60%;
 	height: 50%;
+	margin: 0 auto;
 }
 .descrip p {
-	position: relative;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400;
 	color: black;
@@ -108,7 +103,7 @@ section {
 }
 .mision,
 .vision {
-	position: relative;
+	z-index: 9;
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: 400;
 	color: #0950bb;
@@ -122,8 +117,28 @@ section {
 	margin-bottom: 20px;
 }
 .imagen {
-	position: relative;
+	z-index: 9;
 	bottom: 10%;
+	width: 500px;
+	height: 200px;
+	margin: 20px auto;
+}
+.imagen img {
+	width: inherit;
+	height: inherit;
+}
+.full {
+	z-index: 9;
+	display: flex;
+	flex-direction: column;
+}
+.top {
+	display: flex;
+	justify-content: center;
+
+	margin-top: 150px;
+}
+.bot {
 }
 
 /* Final body */
